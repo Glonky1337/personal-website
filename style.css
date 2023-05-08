@@ -186,7 +186,7 @@
 }
 /* SKILLS */
 
-#skills-section {
+#skill-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -439,7 +439,7 @@
     .accent-line {
         width: 20%;
     }
-    #skills-section {
+    #skill-section {
         padding: 120px 20px 0px 20px;
     }
     #certification-section {
