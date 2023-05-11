@@ -124,6 +124,11 @@
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,12 +149,24 @@
     padding-right: 35px;
     text-decoration: none;
 }
-/* SPLASH SECTION - Everything above, copy throughout site!*/
+
+.nav-button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Make Hamburger not appear on desktop */
+#hamburger {
+    display: none;
+}
+
+/* SPLASH SECTION - Everything above, copy throughout site! include media query for mobile nav bar*/
 #splash-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 10vw 0;
+    padding: 100px 10vw 0;
 }
 
 #splash-left-container {
@@ -185,7 +202,6 @@
     flex-shrink: 0;
 }
 /* SKILLS */
-
 #skill-section {
     display: flex;
     flex-direction: column;
@@ -225,6 +241,7 @@
     position: relative;
     transition: all 0.4s;
 }
+
 .card::before {
     letter-spacing: 0.2em;
     position: absolute;
@@ -309,7 +326,6 @@
       background-image: url(./images/section-icons/sass.png);
 }
 /* CERTIFICATIONS */
-
 #certification-section {
     display: flex;
     flex-direction: column;
@@ -338,7 +354,6 @@
       background-image: url(./images/section-icons/leansixgreenbelt.png);
 }
 /* PROJECTS */
-
 #project-section {
     display: flex;
     flex-direction: column;
@@ -399,15 +414,96 @@
 .etch-a-sketch-card {
     background-image: url(./images/project-demos/etch-a-sketch.gif);
 }
-
-
 /* MEDIA QUERIES */
+@media screen and (max-width: 1238px) {
+    .nav-button-container > .purple-button {
+      display: none;
+    }
+    .topnav a {
+      display: none;
+    }
+    .topnav.responsive a {
+      display: block;
+    }
+    /* Hamburger Styles */
+    #hamburger {
+      display: none;
+    }
+    .nav-toggle {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition-duration: .5s;
+    }
+    .bars {
+      width: 100%;
+      height: 6px;
+      background-color: rgb(112,81,239);
+      border-radius: 4px;
+    }
+    #bar2 {
+      transition-duration: .8s;
+    }
+    #bar1,#bar3 {
+      width: 70%;
+    }
+    #hamburger:checked + .nav-toggle .bars {
+      position: absolute;
+      transition-duration: .5s;
+    }
+    #hamburger:checked + .nav-toggle #bar2 {
+      transform: scaleX(0);
+      transition-duration: .5s;
+    }
+    #hamburger:checked + .nav-toggle #bar1 {
+      width: 100%;
+      transform: rotate(45deg);
+      transition-duration: .5s;
+    }
+    #hamburger:checked + .nav-toggle #bar3 {
+      width: 100%;
+      transform: rotate(-45deg);
+      transition-duration: .5s;
+    }
+    #hamburger:checked + .nav-toggle {
+      transition-duration: .5s;
+      transform: rotate(180deg);
+    }
+    /* Navigation Links */
+    .mobile-nav-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 9%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+    }
+    #nav-link-container {
+        justify-content: flex-start;
+        gap: 30px;
+        font-size: 7vw;
+    }
+}
+
+
+
+
+
+
 @media (max-width: 995px) {
-    /* NAVIGATION TURNS INTO MOBILE */
     #splash-section {
         flex-direction: column;
         gap: 40px;
-        padding: 0px 20px 0px 20px;
+        padding: 100px 20px 0px 20px;
     }
     #splash-left-container {
         justify-content: center;
