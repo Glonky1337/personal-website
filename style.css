@@ -230,7 +230,7 @@
     padding-top: 35px;
 }
 
-.card {
+#card {
     width: 125px;
     height: 125px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
@@ -242,7 +242,7 @@
     transition: all 0.4s;
 }
 
-.card::before {
+#card::before {
     letter-spacing: 0.2em;
     position: absolute;
     bottom: 8px;
@@ -252,7 +252,7 @@
     font-weight: 700;
 }
   
-.card div {
+#card div {
       width: 100%;
       height: 100%;
       border-radius: 20px;
@@ -266,9 +266,23 @@
       background-position: center;
 }
   
-.card:hover div {
+#card:hover div {
     transform: translateY(-40px);
 }
+/* Make mobile card text not appear */
+.card-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-card-text {
+    display: none;
+    padding-top: 5px;
+    font-size: .9em;
+    font-weight: 900;
+    text-align: center;
+}
+
   
 .html-card::before {
     content: 'HTML5';
@@ -481,7 +495,7 @@
         flex-direction: column;
         justify-content: center;
         position: fixed;
-        top: 9%;
+        top: 90px;
         left: 0%;
         width: 100%;
         height: 100%;
@@ -492,9 +506,17 @@
         gap: 30px;
         font-size: 7vw;
     }
+    /* Skill/Cert Cards */
+    #card:hover div {
+        transform: none;
+    }
+    #card::before {
+        content: none;
+    }
+    .mobile-card-text {
+        display: block;
+    }
 }
-
-
 
 
 
@@ -646,7 +668,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .card {
+    #card {
         width: 98px;
         height: 98px;
     }
