@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
 </head>
-<body>
+<body id="body">
     <noscript>
         <p>Your browser doesn't support JavaScript or has it disabled. Please enable JavaScript or use a different browser to view this content.</p>
     </noscript>
@@ -29,7 +29,7 @@
         <div class="nav-button-container">
             <div class="toggle-switch">
                 <label class="switch-label">
-                  <input type="checkbox" class="checkbox">
+                  <input type="checkbox" id="light-dark-mode" href="javascript:void(0);" onclick="lightDarkMode()">
                   <span class="slider"></span>
                 </label>
             </div>  
@@ -121,7 +121,6 @@
         </section>
     </main>
     <footer id="footer-section">
-        <!-- Add ICONs for GitHub, Email, LinkedIn -->
         <div class="footer-top-container">
             <button class="contact linkedin" onclick="window.location.href='https://www.linkedin.com/in/khfergus/';"></button>
             <button class="contact github" onclick="window.location.href='https://github.com/Glonky1337/';"></button>
@@ -142,10 +141,5 @@
 <!-- Add a seperate page for resume.pdf and link to it in navigation bar -->
 
 <!-- SECTIONS -->
-<!-- Header Navigation [X]-->
 <!-- About - SEPERATE PAGE                -->
-<!-- Skills [X]-->
-<!-- Certifications [X] -->
-<!-- Projects [X]-->
-<!-- Articles                             -->
-<!-- Footer [X] ADD LINKEDIN, GITHUB-->
+<!-- Articles          -->

@@ -2,18 +2,13 @@
 
 * {
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    background-color: rgb(17, 24, 39);
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
 
 #body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 24, 39);
 }
 
 .button {
@@ -36,8 +31,7 @@
 }
 
 .blue-button {
-    background-color: rgba(29, 201, 160, 0.08);
-    /* background-color: rgba(17, 24, 39, 0.384); */
+    background-color: rgb(241, 98, 50);
 }
 
 .button:hover {
@@ -48,10 +42,8 @@
 }
 
 .blue-button:hover {
-    border-color: rgb(112, 81, 239);
-    color: rgb(112, 81, 239);
-    /* border-color: #a4a6ac;
-    color: #a4a6ac; */
+    border-color: rgb(241, 98, 50);
+    color: rgb(241, 98, 50);
 }
 
 .button:active {
@@ -62,18 +54,16 @@
 }
 
 .blue-button:active {
-    border-color: rgb(112, 81, 239);
-    color: rgb(112, 81, 239);
-    /* border-color: #a4a6ac;
-    color: #a4a6ac; */
+    background-color: transparent;
+    border-color: rgb(241, 98, 50);
+    color: rgb(241, 98, 50);
 }
 
 .button:disabled {
-    background-color: rgba(255, 255, 255, 0.16);
+    background-color: rgb(255, 255, 255);
     color: rgb(142, 142, 147);
     border-color: rgb(142, 142, 147);
 }
-
 /* NAVIGATION */
 .toggle-switch {
     position: relative;
@@ -94,8 +84,8 @@
     cursor: pointer;
     border: 3px solid var(--dark);
 }
-  
-.checkbox {
+
+#light-dark-mode {
     position: absolute;
     display: none;
 }
@@ -110,7 +100,7 @@
     background-color: rgb(40,41,44);
 }
   
-.checkbox:checked ~ .slider {
+#light-dark-mode:checked ~ .slider {
     background-color: var(--light);
 }
   
@@ -129,7 +119,7 @@
     transition: 0.3s;
 }
   
-.checkbox:checked ~ .slider::before {
+#light-dark-mode:checked ~ .slider::before {
     -webkit-transform: translateX(50px);
     -ms-transform: translateX(50px);
     transform: translateX(50px);
@@ -148,6 +138,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 12vw;
+    color: inherit;
+    background-color: inherit;
 }
 
 #nav-link-container {
@@ -163,6 +155,7 @@
 .nav-link > a {
     padding-right: 35px;
     text-decoration: none;
+    color: inherit;
 }
 
 .nav-button-container {
@@ -170,12 +163,10 @@
     align-items: center;
     gap: 10px;
 }
-
 /* Make Hamburger not appear on desktop */
 #hamburger {
     display: none;
 }
-
 /* SPLASH SECTION - Everything above, copy throughout site! include media query for mobile nav bar*/
 #splash-section {
     display: flex;
@@ -297,7 +288,6 @@
     font-weight: 900;
     text-align: center;
 }
-
   
 .html-card::before {
     content: 'HTML5';
@@ -508,6 +498,10 @@
       transform: rotate(180deg);
     }
     /* Navigation Links */
+    #navigation {
+        background-color: inherit;
+        color: inherit;
+    }
     .mobile-nav-style {
         display: flex;
         flex-direction: column;
@@ -517,7 +511,9 @@
         left: 0%;
         width: 100%;
         height: 100%;
-        z-index: 9999;
+        z-index: 999;
+        background-color: inherit;
+        color: inherit;
     }
     #nav-link-container {
         justify-content: flex-start;
@@ -539,9 +535,6 @@
         display: block;
     }
 }
-
-
-
 
 @media (max-width: 995px) {
     #splash-section {
@@ -752,6 +745,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: inherit;
 }
 
 .contact:hover {
