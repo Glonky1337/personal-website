@@ -506,9 +506,9 @@
     }
     #nav-link-container {
         justify-content: flex-start;
-        padding-top: 40px;
-        gap: 30px;
-        font-size: 7vw;
+        padding-top: 30px;
+        gap: 20px;
+        font-size: 45px;
     }
     .nav-link > a {
         padding-right: 0px;
