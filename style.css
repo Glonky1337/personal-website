@@ -430,6 +430,9 @@
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1238px) {
+    #header {
+        justify-content: flex-end;
+    }
     .nav-button-container > .purple-button {
       display: none;
     }
