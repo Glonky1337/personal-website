@@ -37,6 +37,7 @@
 
 .blue-button {
     background-color: rgba(29, 201, 160, 0.08);
+    /* background-color: rgba(17, 24, 39, 0.384); */
 }
 
 .button:hover {
@@ -46,11 +47,25 @@
     transform: translateY(-5px) scale(1.05);
 }
 
+.blue-button:hover {
+    border-color: rgb(112, 81, 239);
+    color: rgb(112, 81, 239);
+    /* border-color: #a4a6ac;
+    color: #a4a6ac; */
+}
+
 .button:active {
     background-color: transparent;
     border-color: rgb(112, 81, 239);
     color: rgb(112, 81, 239);
     transform: translateY(5px) scale(0.95);
+}
+
+.blue-button:active {
+    border-color: rgb(112, 81, 239);
+    color: rgb(112, 81, 239);
+    /* border-color: #a4a6ac;
+    color: #a4a6ac; */
 }
 
 .button:disabled {
@@ -317,7 +332,7 @@
 }
   
 .github-card::before {
-    content: 'github';
+    content: 'GitHub';
 }
   
 .github-card div {
@@ -722,13 +737,11 @@
 }
 
 #footer-section > a, .footer-item {
-    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 2s;
 }
 #footer-section > a:hover {
     border-bottom: 1px solid white;
-    color: rgba(252, 252, 252, 0.849);
 }
 
 .contact {
@@ -736,7 +749,7 @@
     width: 50px;
     margin: 5px;
     border: none;
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -746,9 +759,11 @@
 }
 
 .contact.linkedin {
-    background-image: url(./images/section-icons/linkedin-contact.png);
+    background-image: url(./images/section-icons/linkedin-contact-light.png);
+    /* background-image: url(./images/section-icons/linkedin-contact-dark.png); */
 }
 
 .contact.github {
-    background-image: url(./images/section-icons/github-contact.png);
+    background-image: url(./images/section-icons/github-contact-light.png);
+    /* background-image: url(./images/section-icons/github-contact-dark.png); */
 }
