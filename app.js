@@ -24,14 +24,12 @@ function lightDarkMode() {
     let githubContactLogo = document.querySelector(".contact.github");
 
     if (x.checked) {
-        console.log('light-mode');
         body.style.color = "rgb(17, 24, 39)";
         body.style.backgroundColor = "rgb(255, 255, 255)";
         linkedinContactLogo.style.backgroundImage = "url(./images/section-icons/linkedin-contact-dark.png)";
         githubContactLogo.style.backgroundImage = "url(./images/section-icons/github-contact-dark.png)";
         // x.checked = false;
     } else {
-        console.log('dark-mode');
         body.style.color = "";
         body.style.backgroundColor = "";
         linkedinContactLogo.style.backgroundImage = "";
