@@ -509,6 +509,9 @@
         gap: 30px;
         font-size: 7vw;
     }
+    .nav-link > a {
+        padding-right: 0px;
+    }
     /* Skill/Cert Cards */
     #card:hover div {
         transform: none;
