@@ -34,35 +34,37 @@
     background-color: rgb(241, 98, 50);
 }
 
-.button:hover {
-    background-color: rgba(29, 201, 160, 0.08);
-    border-color: rgb(112, 81, 239);
-    color: rgb(112, 81, 239);
-    transform: translateY(-5px) scale(1.05);
-}
+@media (hover: hover) and (pointer: fine) {
+    .button:hover {
+        background-color: rgba(29, 201, 160, 0.08);
+        border-color: rgb(112, 81, 239);
+        color: rgb(112, 81, 239);
+        transform: translateY(-5px) scale(1.05);
+    }
 
-.blue-button:hover {
-    border-color: rgb(241, 98, 50);
-    color: rgb(241, 98, 50);
-}
+    .blue-button:hover {
+        border-color: rgb(241, 98, 50);
+        color: rgb(241, 98, 50);
+    }
 
-.button:active {
-    background-color: transparent;
-    border-color: rgb(112, 81, 239);
-    color: rgb(112, 81, 239);
-    transform: translateY(5px) scale(0.95);
-}
+    .button:active {
+        background-color: transparent;
+        border-color: rgb(112, 81, 239);
+        color: rgb(112, 81, 239);
+        transform: translateY(5px) scale(0.95);
+    }
 
-.blue-button:active {
-    background-color: transparent;
-    border-color: rgb(241, 98, 50);
-    color: rgb(241, 98, 50);
-}
+    .blue-button:active {
+        background-color: transparent;
+        border-color: rgb(241, 98, 50);
+        color: rgb(241, 98, 50);
+    }
 
-.button:disabled {
-    background-color: rgb(255, 255, 255);
-    color: rgb(142, 142, 147);
-    border-color: rgb(142, 142, 147);
+    .button:disabled {
+        background-color: rgb(255, 255, 255);
+        color: rgb(142, 142, 147);
+        border-color: rgb(142, 142, 147);
+    }
 }
 /* NAVIGATION */
 .toggle-switch {
