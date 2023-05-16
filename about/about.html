@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Ferguson | Software Developer</title>
+    <meta name="description" content="Kevin Ferguson is a software developer specializing in web development with experience in HTML, CSS, JavaScript, and more.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.kevinferguson.tech/">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body id="body">
+    <noscript>
+        <p>Your browser doesn't support JavaScript or has it disabled. Please enable JavaScript or use a different browser to view this content.</p>
+    </noscript>
+    <header id="header">
+        <nav class="topnav" id="navigation">
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="https://www.kevinferguson.tech/" onclick="toggleMobileNav();toggleHamburger()">home</a></li>
+                <li class="nav-link"><a href="#about-section" onclick="toggleMobileNav();toggleHamburger()">about</a></li>
+                <li class="nav-link"><a href="#skill-section" onclick="toggleMobileNav();toggleHamburger()">skills</a></li>
+                <li class="nav-link"><a href="#certification-section" onclick="toggleMobileNav();toggleHamburger()">certs</a></li>
+                <li class="nav-link"><a href="#project-section" onclick="toggleMobileNav();toggleHamburger()">projects</a></li>
+                <li class="nav-link"><a href="#articles-section" onclick="toggleMobileNav();toggleHamburger()">articles</a></li>
+            </ul>
+        </nav>
+        <div class="nav-button-container">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" id="light-dark-mode" href="javascript:void(0);" onclick="lightDarkMode()">
+                  <span class="slider"></span>
+                </label>
+            </div>  
+            <input type="checkbox" id="hamburger" href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
+            <label for="hamburger" class="nav-toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+            <button class="button purple-button">contact</button>
+        </div>
+    </header>
+    <main>
+        <section id="splash-section">
+            <div id="splash-left-container">
+                <h2>i'm kevin, a <span id="job-title">developer</span></h2>
+                <p>Specialization in JavaScript Technologies across the whole stack (Node.js, Express, Angular, React). Experience building complete web applications with backend API systems.</p>
+                <div class="splash-button-container">
+                    <button class="button purple-button splash">contact me</button>
+                    <button class="button blue-button splash">view projects</button>
+                </div>
+            </div>
+            <img id="pro-image" src="./images/kevinferguso826.png">
+        </section>
+        <section id="skill-section">
+            <hr class="accent-line">
+            <h2 class="section-header">skills</h2>
+            <div id="skill-container">
+                <!-- Separate front-end, back-end, miscellaneous -->
+                <div class="card-container">
+                    <div id="card" class="html-card"><div></div></div>
+                    <div class="mobile-card-text">HTML5</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="css-card"><div></div></div>
+                    <div class="mobile-card-text">CSS3</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="sass-card"><div></div></div>
+                    <div class="mobile-card-text">SCSS</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="javascript-card"><div></div></div>
+                    <div class="mobile-card-text">JavaScript</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="git-card"><div></div></div>
+                    <div class="mobile-card-text">git</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="github-card"><div></div></div>
+                    <div class="mobile-card-text">GitHub</div>
+                </div>
+                <div class="card-container">
+                    <div id="card" class="power-automate-card"><div></div></div>
+                    <div class="mobile-card-text">Power Automate</div>
+                </div>
+            </div>
+        </section>
+        <section id="certification-section">
+            <hr class="accent-line">
+            <h2 class="section-header">certifications</h2>
+            <div id="certification-container">
+                <div class="card-container">
+                    <div id="card" class="six-sigma-card"><div></div></div>
+                    <div class="mobile-card-text">LSSGB</div>
+                </div>
+            </div>
+        </section>
+        <section id="project-section">
+            <hr class="accent-line">
+            <h2 class="section-header">projects</h2>
+            <div id="project-container">
+                <div id="calculator-container">
+                    <div class="project-card calculator-card"></div>
+                    <div class="project-button-container">
+                        <button class="button purple-button project" onclick="window.location.href='https://github.com/Glonky1337/calculator';">view github</button>
+                        <button class="button blue-button project" onclick="window.location.href='https://glonky1337.github.io/calculator/index.html';">see project</button>
+                    </div>
+                </div>
+                <div id="etch-a-sketch-container">
+                    <div class="project-card etch-a-sketch-card"></div>
+                    <div class="project-button-container">
+                        <button class="button purple-button project" onclick="window.location.href='https://github.com/Glonky1337/etch-a-sketch';">view github</button>
+                        <button class="button blue-button project" onclick="window.location.href='https://glonky1337.github.io/etch-a-sketch';">see project</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-section">
+        <div class="footer-top-container">
+            <button class="contact linkedin" onclick="window.location.href='https://www.linkedin.com/in/khfergus/';"></button>
+            <button class="contact github" onclick="window.location.href='https://github.com/Glonky1337/';"></button>
+        </div>
+        <a class="footer-bottom-container" id="current-year">
+            <script>
+                let currentYear = new Date().getFullYear();
+                let currentYearElement = document.getElementById('current-year');
+                currentYearElement.textContent = currentYear;
+                currentYearElement.insertAdjacentHTML('beforeend', ' &copy; Kevin H. Ferguson');
+            </script>
+        </a>
+    </footer>
+</body>
+</html>
