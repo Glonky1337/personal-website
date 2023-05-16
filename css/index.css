@@ -1,0 +1,428 @@
+/* SPLASH SECTION*/
+#splash-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10vw 0;
+}
+
+#splash-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    max-width: 700px;
+}
+
+#splash-left-container > h2 {
+    font-size: 72px;
+    line-height: 1.182em;
+}
+
+#splash-left-container > p {
+    font-size: 24px;
+    width: 80%;
+}
+
+#job-title {
+    color: rgb(112,81,239);
+}
+
+.splash-button-container {
+    display: flex;
+    gap: 35px;
+}
+
+#pro-image {
+    width: 50%;
+    max-width: 700px;
+    flex-shrink: 0;
+}
+/* SKILLS */
+#skill-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30vh 10vw 0;
+}
+
+#skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 35px;
+}
+
+#card {
+    width: 125px;
+    height: 125px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s;
+}
+
+#card::before {
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+  
+#card div {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+      cursor: pointer;
+      z-index: 10;
+      transition: all .4s;
+      background-color: rgb(255, 255, 255);
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+  
+#card:hover div {
+    transform: translateY(-40px);
+}
+.card-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-card-text {
+    display: none;
+    padding-top: 5px;
+    font-size: .9em;
+    font-weight: 900;
+    text-align: center;
+}
+  
+.html-card::before {
+    content: 'HTML5';
+}
+  
+.html-card div {
+      background-image: url(/images/section-icons/html5.png);
+}
+  
+.css-card::before {
+    content: 'CSS3';
+}
+  
+.css-card div {
+      background-image: url(/images/section-icons/css3.png);
+}
+  
+.javascript-card::before {
+    content: 'JavaScript';
+}
+  
+.javascript-card div {
+      background-image: url(/images/section-icons/javascript.png);
+}
+  
+.git-card::before {
+    content: 'git';
+}
+  
+.git-card div {
+      background-image: url(/images/section-icons/git.png);
+}
+  
+.github-card::before {
+    content: 'GitHub';
+}
+  
+.github-card div {
+      background-image: url(/images/section-icons/github.png);
+}
+  
+.power-automate-card::before {
+    content: 'MS Power Automate';
+}
+  
+.power-automate-card div {
+      background-image: url(/images/section-icons/powerautomate.png);
+}
+  
+.sass-card::before {
+    content: 'SCSS';
+}
+  
+.sass-card div {
+      background-image: url(/images/section-icons/sass.png);
+}
+/* CERTIFICATIONS */
+#certification-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 70px 10vw 0;
+}
+
+#certification-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 35px;
+}
+
+.six-sigma-card::before {
+    content: 'LSSGB';
+}
+  
+.six-sigma-card div {
+      background-image: url(/images/section-icons/leansixgreenbelt.png);
+}
+/* PROJECTS */
+#project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 70px 10vw 0;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 35px;
+}
+
+.project-card {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1vh;
+    gap: 20px;
+}
+
+#calculator-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-card {
+    background-image: url(/images/project-demos/calculator.gif);
+}
+
+#etch-a-sketch-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.etch-a-sketch-card {
+    background-image: url(/images/project-demos/etch-a-sketch.gif);
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 1238px) {
+    /* Skill/Cert Cards */
+    #card:hover div {
+        transform: none;
+    }
+    #card::before {
+        content: none;
+    }
+    .mobile-card-text {
+        display: block;
+    }
+}
+
+@media (max-width: 995px) {
+    #splash-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 100px 20px 0px 20px;
+    }
+    #splash-left-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    #pro-image {
+        width: 100%;
+    }
+    #splash-left-container> h2 {
+        width: 95%;
+        font-size: 90px;
+        text-align: center;
+    }
+    #splash-left-container > p {
+        width: 95%;
+        font-size: 35px;
+        text-align: center;
+    }
+    .button.purple-button.splash {
+        padding: 30px 60px;
+        font-size: 30px;
+    }
+    .button.blue-button.splash {
+        padding: 30px 60px;
+        font-size: 30px;
+    }
+    #skill-section {
+        padding: 120px 20px 0px 20px;
+    }
+    #certification-section {
+        padding: 120px 20px 0px 20px;
+    }
+    #project-section {
+        padding: 120px 20px 0px 20px;
+    }
+    #project-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .project-card {
+        width: 720px;
+        height: 720px;
+    }
+    .project-button-container {
+        flex-direction: row;
+        padding-top: 10px;
+        gap: 40px;
+    }
+    .button.purple-button.project {
+        padding: 30px 60px;
+        font-size: 30px;
+    }
+    .button.blue-button.project {
+        padding: 30px 60px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #splash-left-container {
+        justify-content: center;
+        align-items: center;
+    }
+    #splash-left-container> h2 {
+        width: 85%;
+        font-size: 70px;
+    }
+    #splash-left-container > p {
+        width: 85%;
+        font-size: 25px;
+    }
+    .button.purple-button.splash {
+        padding: 20px 40px;
+        font-size: 23px;
+    }
+    .button.blue-button.splash {
+        padding: 20px 40px;
+        font-size: 23px;
+    }
+    .button.purple-button.project {
+        padding: 20px 40px;
+        font-size: 23px;
+    }
+    .button.blue-button.project {
+        padding: 20px 40px;
+        font-size: 23px;
+    }
+    #project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 596px) {
+    .button.purple-button.splash {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .button.blue-button.splash {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .project-card {
+        width: 450px;
+        height: 450px;
+    }
+    .project-button-container {
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;
+    }
+    .button.purple-button.project {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .button.blue-button.project {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    #splash-left-container> h2 {
+        width: 100%;
+        font-size: 50px;
+    }
+    #splash-left-container > p {
+        width: 100%;
+        font-size: 20px;
+    }
+    #skill-container {
+        gap: 20px;
+    }
+    #certification-container {
+        gap: 20px;
+    }
+    #project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #card {
+        width: 98px;
+        height: 98px;
+    }
+    .project-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 408px) {
+    .splash-button-container {
+        flex-direction: column;
+        width: 70%;
+        gap: 10px;
+    }
+}
