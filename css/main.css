@@ -25,6 +25,7 @@
     font-weight: 900;
     letter-spacing: 1px;
     transition: all 0.15s linear;
+    cursor: pointer;
 }
 
 .purple-button {
