@@ -112,7 +112,7 @@
 }
   
 .html-card div {
-      background-image: url(/images/section-icons/html5.png);
+      background-image: url(../images/section-icons/html5.png);
 }
   
 .css-card::before {
@@ -120,7 +120,7 @@
 }
   
 .css-card div {
-      background-image: url(/images/section-icons/css3.png);
+      background-image: url(../images/section-icons/css3.png);
 }
   
 .javascript-card::before {
@@ -128,7 +128,7 @@
 }
   
 .javascript-card div {
-      background-image: url(/images/section-icons/javascript.png);
+      background-image: url(../images/section-icons/javascript.png);
 }
   
 .git-card::before {
@@ -136,7 +136,7 @@
 }
   
 .git-card div {
-      background-image: url(/images/section-icons/git.png);
+      background-image: url(../images/section-icons/git.png);
 }
   
 .github-card::before {
@@ -144,7 +144,7 @@
 }
   
 .github-card div {
-      background-image: url(/images/section-icons/github.png);
+      background-image: url(../images/section-icons/github.png);
 }
   
 .power-automate-card::before {
@@ -152,7 +152,7 @@
 }
   
 .power-automate-card div {
-      background-image: url(/images/section-icons/powerautomate.png);
+      background-image: url(../images/section-icons/powerautomate.png);
 }
   
 .sass-card::before {
@@ -160,7 +160,7 @@
 }
   
 .sass-card div {
-      background-image: url(/images/section-icons/sass.png);
+      background-image: url(../images/section-icons/sass.png);
 }
 /* CERTIFICATIONS */
 #certification-section {
@@ -184,7 +184,7 @@
 }
   
 .six-sigma-card div {
-      background-image: url(/images/section-icons/leansixgreenbelt.png);
+      background-image: url(../images/section-icons/leansixgreenbelt.png);
 }
 /* PROJECTS */
 #project-section {
@@ -232,7 +232,7 @@
 }
 
 .calculator-card {
-    background-image: url(/images/project-demos/calculator.gif);
+    background-image: url(../images/project-demos/calculator.gif);
 }
 
 #etch-a-sketch-container {
@@ -241,7 +241,7 @@
 }
 
 .etch-a-sketch-card {
-    background-image: url(/images/project-demos/etch-a-sketch.gif);
+    background-image: url(../images/project-demos/etch-a-sketch.gif);
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1238px) {
