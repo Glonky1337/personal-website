@@ -31,7 +31,7 @@
     background-color: rgb(112, 81, 239);
 }
 
-.blue-button {
+.orange-button {
     background-color: rgb(241, 98, 50);
 }
 
@@ -55,7 +55,7 @@
         transform: translateY(-5px) scale(1.05);
     }
 
-    .blue-button:hover {
+    .orange-button:hover {
         border-color: rgb(241, 98, 50);
         color: rgb(241, 98, 50);
     }
@@ -67,7 +67,7 @@
         transform: translateY(5px) scale(0.95);
     }
 
-    .blue-button:active {
+    .orange-button:active {
         background-color: transparent;
         border-color: rgb(241, 98, 50);
         color: rgb(241, 98, 50);
