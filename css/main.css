@@ -183,6 +183,10 @@
 #hamburger {
     display: none;
 }
+
+#traffic-cone {
+    max-width: 300px;
+}
 /* MOBILE MEDIA QUERIES */
 
 @media screen and (max-width: 1238px) {
