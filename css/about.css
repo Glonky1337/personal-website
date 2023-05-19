@@ -1,0 +1,135 @@
+/* ABOUT SECTION */
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15vw 0;
+    gap: 30px;
+}
+
+.section-header {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.182em;
+    text-align: center;
+}
+
+#about-section > p {
+    font-size: 18px;
+    width: 80%;
+    line-height: 28px;
+}
+
+.text-color-emphasis {
+    color: rgb(112,81,239);
+}
+/* CONTACT SECTION */
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+@media screen and (max-width: 1238px) {
+    /* Skill/Cert Cards */
+    #about-section {
+        padding: 100px 1vw 0;
+    }
+    .section-header {
+        font-size: 24px;
+    }
+    #about-section > p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    gap: 35px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: rgb(106 117 120 / 42%);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+.first-last-name-container {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+  
+#contact-form label {
+    position: relative;
+}
+  
+#contact-form label .contact-input {
+    width: 100%;
+    padding: 10px 10px 25px 10px;
+    border: 1px solid rgb(106 117 120 / 42%);
+    outline: 0;
+    border-radius: 6px;
+}
+  
+#contact-form label .contact-input + span {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    color: rgb(152, 151, 151);
+    font-size: 16px;
+    cursor: text;
+    transition: 0.4s ease;
+}
+  
+#contact-form label .contact-input:focus + span,#contact-form label .contact-input:valid + span {
+    top: 30px;
+    font-size: 11px;
+    font-weight: 600;
+}
+  
+#contact-form label .contact-input:valid + span {
+    color: rgb(79, 66, 171);
+}
+  
+.contact-input01 {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+}
+  
+#contact-form label .contact-input01 + span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: rgb(152, 151, 151);
+    font-size: 16px;
+    cursor: text;
+    transition: 0.7s ease;
+}
+  
+#contact-form label .contact-input01:focus + span, #contact-form label .contact-input01:valid + span {
+    bottom: 10px;
+    font-size: 11px;
+    font-weight: 900;
+}
