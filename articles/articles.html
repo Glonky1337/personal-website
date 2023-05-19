@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Kevin Ferguson</title>
+    <meta name="description" content="Kevin Ferguson is a software developer specializing in web development with experience in HTML, CSS, JavaScript, and more.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.kevinferguson.tech/">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/articles.css">
+    <script src="../js/app.js" defer></script>
+    <script src="../js/article.js" defer></script>
+</head>
+<body id="body">
+    <noscript>
+        <p>Your browser doesn't support JavaScript or has it disabled. Please enable JavaScript or use a different browser to view this content.</p>
+    </noscript>
+    <header id="header">
+        <nav class="topnav" id="navigation">
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="https://www.kevinferguson.tech/" onclick="toggleMobileNav();toggleHamburger()">home</a></li>
+                <li class="nav-link"><a href="#about-section" onclick="toggleMobileNav();toggleHamburger()">about</a></li>
+                <li class="nav-link"><a href="#skill-section" onclick="toggleMobileNav();toggleHamburger()">skills</a></li>
+                <li class="nav-link"><a href="#certification-section" onclick="toggleMobileNav();toggleHamburger()">certs</a></li>
+                <li class="nav-link"><a href="#project-section" onclick="toggleMobileNav();toggleHamburger()">projects</a></li>
+                <li class="nav-link"><a href="#articles-section" onclick="toggleMobileNav();toggleHamburger()">articles</a></li>
+            </ul>
+        </nav>
+        <div class="nav-button-container">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" id="light-dark-mode" href="javascript:void(0);" onclick="lightDarkMode()">
+                  <span class="slider"></span>
+                </label>
+            </div>  
+            <input type="checkbox" id="hamburger" href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
+            <label for="hamburger" class="nav-toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+            <button class="button purple-button">contact</button>
+        </div>
+    </header>
+    <main>
+        <section id="construction-section">
+            <h2 class="section-header">Coming Soon!</h2>
+            <div>CONSTRUCTION CONE?</div>
+        </section>
+    </main>
+    <footer id="footer-section">
+        <div class="footer-top-container">
+            <button class="contact linkedin" onclick="window.location.href='https://www.linkedin.com/in/khfergus/';"></button>
+            <button class="contact github" onclick="window.location.href='https://github.com/Glonky1337/';"></button>
+        </div>
+        <a class="footer-bottom-container" id="current-year">
+            <script>
+                let currentYear = new Date().getFullYear();
+                let currentYearElement = document.getElementById('current-year');
+                currentYearElement.textContent = currentYear;
+                currentYearElement.insertAdjacentHTML('beforeend', ' &copy; Kevin H. Ferguson');
+            </script>
+        </a>
+    </footer>
+</body>
+</html>
