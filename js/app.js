@@ -22,27 +22,27 @@ function toggleHamburger() {
 function toggleColorMode() {
   const currentColorMode = getCurrentColorMode();
 
-  if (currentColorMode === 'light') {
-    setColorMode('dark');
+  if (currentColorMode === "light") {
+    setColorMode("dark");
   } else {
-    setColorMode('light');
+    setColorMode("light");
   }
 }
 
 // Get the current color mode from local storage
 function getCurrentColorMode() {
-  const preferredColorMode = localStorage.getItem('colorMode');
+  const preferredColorMode = localStorage.getItem("colorMode");
 
-  if (preferredColorMode === 'light') {
-    return 'light';
+  if (preferredColorMode === "light") {
+    return "light";
   } else {
-    return 'dark';
+    return "dark";
   }
 }
 
 // Set the preferred color mode in local storage
 function setColorMode(colorMode) {
-  localStorage.setItem('colorMode', colorMode);
+  localStorage.setItem("colorMode", colorMode);
   applyColorMode(colorMode);
 }  // const bodyElement = document.body;
 
@@ -52,7 +52,7 @@ function applyColorMode(colorMode) {
   let linkedinContactLogo = document.querySelector(".contact.linkedin");
   let githubContactLogo = document.querySelector(".contact.github");
 
-  if (colorMode === 'light') {
+  if (colorMode === "light") {
     body.style.color = "rgb(17, 24, 39)";
     body.style.backgroundColor = "rgb(255, 255, 255)";
     linkedinContactLogo.style.backgroundImage = "url(/images/section-icons/linkedin-contact-dark.png)";
@@ -66,7 +66,12 @@ function applyColorMode(colorMode) {
 }
 
 // On page load, apply the stored color mode if available
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   const preferredColorMode = getCurrentColorMode();
   applyColorMode(preferredColorMode);
+  // If light mode, display theme toggle-switch as checked
+  let x = document.getElementById("light-dark-mode");
+  if (preferredColorMode === "light") {
+    x.checked = true;
+  }
 });
