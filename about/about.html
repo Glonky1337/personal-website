@@ -69,24 +69,24 @@
             <form id="contact-form" action="../php/contact-form.php" method="POST">
                 <div class="first-last-name-container">
                     <label>
-                        <input id="first-name" required="" placeholder="" type="text" class="contact-input">
+                        <input id="first-name" required="" placeholder="" type="text" class="contact-input" maxlength="50">
                         <span>First Name</span>
                     </label>
                     <label>
-                        <input id="last-name" required="" placeholder="" type="text" class="contact-input">
+                        <input id="last-name" required="" placeholder="" type="text" class="contact-input" maxlength="50">
                         <span>Last Name</span>
                     </label>
                 </div>  
                 <label>
-                    <input id="email" required="" placeholder="" type="email" class="contact-input">
+                    <input id="email" required="" placeholder="" type="email" class="contact-input" maxlength="100">
                     <span>Email</span>
                 </label> 
                 <label>
-                    <input id="phone-number" required="" type="tel" placeholder="" class="contact-input">
+                    <input id="phone-number" required="" type="tel" placeholder="" class="contact-input" maxlength="15">
                     <span>Phone Number</span>
                 </label>
                 <label>
-                    <textarea id="message" required="" rows="3" placeholder="" class="contact-input01"></textarea>
+                    <textarea id="message" required="" rows="3" placeholder="" class="contact-input01" maxlength="200"></textarea>
                     <span>Message</span>
                 </label>
                 <button type="submit" value="submit" class="button orange-button">Send Message</button>
