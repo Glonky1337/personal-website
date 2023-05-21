@@ -23,9 +23,9 @@
             <ul id="nav-link-container">
                 <li class="nav-link"><a href="../index.html" onclick="toggleMobileNav();toggleHamburger()">home</a></li>
                 <li class="nav-link"><a href="../about/about.html" onclick="toggleMobileNav();toggleHamburger()">about</a></li>
-                <li class="nav-link"><a href="#skill-section" onclick="toggleMobileNav();toggleHamburger()">skills</a></li>
-                <li class="nav-link"><a href="#certification-section" onclick="toggleMobileNav();toggleHamburger()">certs</a></li>
-                <li class="nav-link"><a href="#project-section" onclick="toggleMobileNav();toggleHamburger()">projects</a></li>
+                <li class="nav-link"><a href="../index.html#skill-section" onclick="toggleMobileNav();toggleHamburger()">skills</a></li>
+                <li class="nav-link"><a href="../index.html#certification-section" onclick="toggleMobileNav();toggleHamburger()">certs</a></li>
+                <li class="nav-link"><a href="../index.html#project-section" onclick="toggleMobileNav();toggleHamburger()">projects</a></li>
                 <li class="nav-link"><a href="../articles/articles.html" onclick="toggleMobileNav();toggleHamburger()">articles</a></li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
                 <div class="bars" id="bar2"></div>
                 <div class="bars" id="bar3"></div>
             </label>
-            <button class="button purple-button">contact</button>
+            <button class="button purple-button" onclick="window.location.href='../about/about.html#contact';">contact</button>
         </div>
     </header>
     <main>
@@ -64,7 +64,7 @@
             <p>If you are seeking a dedicated and ambitious team member who possesses both technical aptitude and the ability to thrive in demanding environments, let's connect! I am eager to explore opportunities where my expertise can contribute to your organization's success while fueling my own professional growth.</p>
         </section>
         <section id="contact-section">
-            <hr class="accent-line">
+            <hr id="contact" class="accent-line">
             <h2 class="section-header">Contact Me</h2>
             <form id="contact-form" action="../php/contact-form.php" method="POST">
                 <div class="first-last-name-container">
