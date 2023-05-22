@@ -327,9 +327,9 @@
 }
 
 .contact.linkedin {
-    background-image: url(/images/section-icons/linkedin-contact-light.png);
+    background-image: url(../images/section-icons/linkedin-contact-light.png);
 }
 
 .contact.github {
-    background-image: url(/images/section-icons/github-contact-light.png);
+    background-image: url(../images/section-icons/github-contact-light.png);
 }
