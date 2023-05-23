@@ -55,8 +55,8 @@ function applyColorMode(colorMode) {
   if (colorMode === "light") {
     body.style.color = "rgb(17, 24, 39)";
     body.style.backgroundColor = "rgb(255, 255, 255)";
-    linkedinContactLogo.style.backgroundImage = "url(/images/section-icons/linkedin-contact-dark.png)";
-    githubContactLogo.style.backgroundImage = "url(/images/section-icons/github-contact-dark.png)";
+    linkedinContactLogo.style.backgroundImage = "url(../images/section-icons/linkedin-contact-dark.png)";
+    githubContactLogo.style.backgroundImage = "url(../images/section-icons/github-contact-dark.png)";
   } else {
     body.style.color = "";
     body.style.backgroundColor = "";
