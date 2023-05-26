@@ -1,4 +1,6 @@
 <?php
+$errors = array();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = sanitizeInput($_POST["firstName"]);
     $lastName = sanitizeInput($_POST["lastName"]);
@@ -12,8 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $maxEmailLength = 100;
     $maxPhoneNumberLength = 15;
     $maxMessageLength = 200;
-
-    $errors = array();
 
     if (empty($firstName) || empty($lastName) || empty($email) || empty($phoneNumber) || empty($message)) {
         $errors[] = "All fields are required.";
@@ -41,40 +41,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = "Message should not exceed {$maxMessageLength} characters.";
     }
 
-    if (!empty($errors)) {
-        http_response_code(400); // Bad Request
-        echo implode("<br>", $errors);
-        exit;
+    if (empty($errors)) {
+        $to = "fergusontbs@gmail.com";
+        $subject = "Personal Website Form Submission";
+        $message = "First Name: " . $firstName . "\n"
+                . "Last Name: " . $lastName . "\n"
+                . "Email: " . $email . "\n"
+                . "Message: " . $message;
+
+        $headers = "Form: " . $email . "\r\n"
+                . "Reply-To: " . $email . "\r\n"
+                . "X-Mailer: PHP/" . phpversion();
+
+        if (mail($to, $subject, $message, $headers)) {
+            // Email sent successfully
+            http_response_code(200); // OK
+            echo "success"; // Send success status
+            exit;
+        } else {
+            // Email failed to send
+            $errors[] = "Failed to send email. Please try again later.";
+        }
     }
-
-    $to = "fergusontbs@gmail.com";
-    $subject = "Personal Website Form Submission";
-    $message = "First Name: " . $firstName . "\n"
-            . "Last Name: " . $lastName . "\n"
-            . "Email: " . $email . "\n"
-            . "Message: " . $message;
-
-    $headers = "Form: " . $email . "\r\n"
-            . "Reply-To: " . $email . "\r\n"
-            . "X-Mailer: PHP/" . phpversion();
-
-    if (mail($to, $subject, $message, $headers)) {
-        // Email sent successfully
-        http_response_code(200); // OK
-        echo "Form submitted successfully!";
-        exit;
-    } else {
-        // Email failed to send
-        http_response_code(500); // Internal Server Error
-        echo "Failed to send email. Please try again later.";
-        exit;
-    }
-
-    // Send a success response
-    http_response_code(200); // OK
-    echo "Form submitted successfully!";
-    exit;
 }
+
+// Send error response
+http_response_code(400); // Bad Request
+echo implode("<br>", $errors);
+exit;
 
 function sanitizeInput($input) {
     $input = trim($input);
