@@ -186,6 +186,14 @@
 .six-sigma-card div {
       background-image: url(../images/section-icons/leansixgreenbelt.png);
 }
+
+.comptia-security-plus-card::before {
+    content: 'Security+';
+}
+  
+.comptia-security-plus-card div {
+      background-image: url(../images/section-icons/comptiasecurityplus.png);
+}
 /* PROJECTS */
 #project-section {
     display: flex;
