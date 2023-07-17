@@ -194,6 +194,14 @@
 .comptia-security-plus-card div {
       background-image: url(../images/section-icons/comptiasecurityplus.png);
 }
+
+.itil-foundation-card::before {
+    content: 'ITIL4';
+}
+  
+.itil-foundation-card div {
+      background-image: url(../images/section-icons/itilfoundation.png);
+}
 /* PROJECTS */
 #project-section {
     display: flex;
