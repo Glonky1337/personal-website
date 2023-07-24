@@ -202,6 +202,14 @@
 .itil-foundation-card div {
       background-image: url(../images/section-icons/itilfoundation.png);
 }
+
+.scrum-master-card::before {
+    content: 'CSM';
+}
+  
+.scrum-master-card div {
+      background-image: url(../images/section-icons/certifiedscrummaster.png);
+}
 /* PROJECTS */
 #project-section {
     display: flex;
