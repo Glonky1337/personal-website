@@ -107,6 +107,14 @@
     text-align: center;
 }
   
+.javascript-card::before {
+    content: 'JavaScript';
+}
+  
+.javascript-card div {
+      background-image: url(../images/section-icons/javascript.png);
+}
+
 .html-card::before {
     content: 'HTML5';
 }
@@ -121,14 +129,6 @@
   
 .css-card div {
       background-image: url(../images/section-icons/css3.png);
-}
-  
-.javascript-card::before {
-    content: 'JavaScript';
-}
-  
-.javascript-card div {
-      background-image: url(../images/section-icons/javascript.png);
 }
   
 .git-card::before {
@@ -209,6 +209,14 @@
   
 .scrum-master-card div {
       background-image: url(../images/section-icons/certifiedscrummaster.png);
+}
+
+.system-administrator-card::before {
+    content: 'CSA';
+}
+  
+.system-administrator-card div {
+      background-image: url(../images/section-icons/servicenow-certified-system-administrator.svg);
 }
 /* PROJECTS */
 #project-section {
