@@ -218,6 +218,14 @@
 .system-administrator-card div {
       background-image: url(../images/section-icons/servicenow-certified-system-administrator.svg);
 }
+
+.application-developer-card::before {
+    content: 'CAD';
+}
+  
+.application-developer-card div {
+      background-image: url(../images/section-icons/servicenow-certified-application-developer.svg);
+}
 /* PROJECTS */
 #project-section {
     display: flex;
