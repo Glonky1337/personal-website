@@ -147,20 +147,28 @@
       background-image: url(../images/section-icons/github.png);
 }
   
-.power-automate-card::before {
-    content: 'MS Power Automate';
-}
-  
-.power-automate-card div {
-      background-image: url(../images/section-icons/powerautomate.png);
-}
-  
 .sass-card::before {
     content: 'SCSS';
 }
   
 .sass-card div {
       background-image: url(../images/section-icons/sass.png);
+}
+
+.ajax-card::before {
+    content: 'Ajax';
+}
+  
+.ajax-card div {
+      background-image: url(../images/section-icons/ajax.svg);
+}
+
+.angular-card::before {
+    content: 'Angular';
+}
+  
+.angular-card div {
+      background-image: url(../images/section-icons/angular.png);
 }
 /* CERTIFICATIONS */
 #certification-section {
@@ -177,14 +185,6 @@
     flex-wrap: wrap;
     gap: 50px;
     padding-top: 35px;
-}
-
-.six-sigma-card::before {
-    content: 'LSSGB';
-}
-  
-.six-sigma-card div {
-      background-image: url(../images/section-icons/leansixgreenbelt.png);
 }
 
 .comptia-security-plus-card::before {
@@ -225,6 +225,15 @@
   
 .application-developer-card div {
       background-image: url(../images/section-icons/servicenow-certified-application-developer.svg);
+}
+
+.cis-spm-card::before {
+    content: 'CIS-SPM';
+}
+  
+.cis-spm-card div {
+      background-image: url(../images/section-icons/servicenow-cis-spm.png);
+      background-size: 65% !important;
 }
 /* PROJECTS */
 #project-section {
