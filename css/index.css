@@ -227,6 +227,24 @@
       background-image: url(../images/section-icons/servicenow-certified-application-developer.svg);
 }
 
+.cis-itsm-card::before {
+    content: 'CIS-ITSM';
+}
+  
+.cis-itsm-card div {
+      background-image: url(../images/section-icons/servicenow-cis-itsm.png);
+      background-size: 65% !important;
+}
+
+.cis-csm-card::before {
+    content: 'CIS-CSM';
+}
+  
+.cis-csm-card div {
+      background-image: url(../images/section-icons/servicenow-cis-csm.png);
+      background-size: 65% !important;
+}
+
 .cis-spm-card::before {
     content: 'CIS-SPM';
 }
@@ -235,6 +253,7 @@
       background-image: url(../images/section-icons/servicenow-cis-spm.png);
       background-size: 65% !important;
 }
+
 /* PROJECTS */
 #project-section {
     display: flex;
